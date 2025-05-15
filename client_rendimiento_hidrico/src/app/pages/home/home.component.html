@@ -1,0 +1,26 @@
+<!--barra de navegacion superior-->
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <img src="assets/img/agua_imagen.png" alt="Centro de monitoreo del agua" style="width: 2%; margin-right: 16px;">
+      <a class="navbar-brand" routerLink="/home/start">Centro de monitoreo del agua</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0" style="margin-left: auto;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home/start">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home/login">Ingresar</a>
+          </li>
+          <li class="nav-item">            
+            <a class="btn btn-primary" routerLink="/home/register">Registrar</a>
+          </li>
+        </ul>        
+      </div>
+    </div>
+</nav>
+
+<!--etiqueta donde carga la vista de las paginas hijas-->
+<router-outlet></router-outlet>
